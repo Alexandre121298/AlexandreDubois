@@ -1,10 +1,5 @@
 import "./style/Home.css";
 import profileImg from "../assets/profile.jpg";
-import reactLogo from "../assets/logos/react.png";
-import htmlLogo from "../assets/logos/html.png";
-import jsLogo from "../assets/logos/js.png";
-import cssLogo from "../assets/logos/css.png";
-import githubLogo from "../assets/logos/github.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faReact,
@@ -13,6 +8,7 @@ import {
   faCss3Alt,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 
 function Home() {
@@ -22,10 +18,10 @@ function Home() {
         <img src={profileImg} alt="Portrait" className="profile-img" />
         <div>
           <h1>Bienvenue !</h1>
-          <p>Je suis <strong>Développeur Web Frontend</strong> passionné par la création d'interfaces modernes et accessibles.</p>
-          <button className="btn">Voir mes projets</button>
+          <p><strong>Développeur fullstack</strong>, je conçois des applications performantes et intuitives, du backend à l’interface utilisateur.</p>
+          <Link to="/projects" className="btn">Voir mes projets</Link>
           <a href="/cv.pdf" download>
-            <button className="cv-button ">Telecharger mon CV</button>
+            <button className="cv-button">Telecharger mon CV</button>
           </a>
         </div>
       </div>
