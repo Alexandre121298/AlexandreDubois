@@ -39,6 +39,9 @@
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  font-size: 1rem; 
+  font-family: inherit; 
+  line-height: normal; 
 }
 
 .cv-button-about:hover {

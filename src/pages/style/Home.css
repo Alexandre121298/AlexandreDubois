@@ -32,11 +32,19 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.cv-button,
+.btn {
+  font-size: 1rem; /* même taille de police */
+  font-family: inherit; /* hérite de la police globale */
+  line-height: normal; /* évite les variations de hauteur */
+}
+
 .btn {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   background-color: #333;
   color: white;
+  text-decoration: none;
   border: none;
   cursor: pointer;
   border-radius: 5px;
