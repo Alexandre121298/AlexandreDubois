@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/AlexandreDubois/static/css/main.420b2134.css",
-    "main.js": "/AlexandreDubois/static/js/main.3d901453.js",
+    "main.css": "/AlexandreDubois/static/css/main.9994fbc7.css",
+    "main.js": "/AlexandreDubois/static/js/main.3ff4d217.js",
     "static/js/453.7a28b0b5.chunk.js": "/AlexandreDubois/static/js/453.7a28b0b5.chunk.js",
     "static/media/profile.jpg": "/AlexandreDubois/static/media/profile.b60e9afddab6d8a94b74.jpg",
+    "static/media/Orbitaal.png": "/AlexandreDubois/static/media/Orbitaal.d7755f544ae926ec7127.png",
     "static/media/spotifarm.png": "/AlexandreDubois/static/media/spotifarm.60a4f86498d729bce285.png",
     "index.html": "/AlexandreDubois/index.html",
-    "main.420b2134.css.map": "/AlexandreDubois/static/css/main.420b2134.css.map",
-    "main.3d901453.js.map": "/AlexandreDubois/static/js/main.3d901453.js.map",
+    "main.9994fbc7.css.map": "/AlexandreDubois/static/css/main.9994fbc7.css.map",
+    "main.3ff4d217.js.map": "/AlexandreDubois/static/js/main.3ff4d217.js.map",
     "453.7a28b0b5.chunk.js.map": "/AlexandreDubois/static/js/453.7a28b0b5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.420b2134.css",
-    "static/js/main.3d901453.js"
+    "static/css/main.9994fbc7.css",
+    "static/js/main.3ff4d217.js"
   ]
 }
