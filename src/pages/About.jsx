@@ -8,7 +8,7 @@ function About() {
       <p>
         Je suis <strong>Alexandre Dubois</strong>, développeur fullstack passionné par le
         développement logiciel et les nouvelles technologies. Diplômé d’un master en ingénierie logicielle
-        (MIAGE – UPJV), j’ai acquis une solide expérience en développement frontend et backend
+        (Cloud Computing & Mobility – UPJV), j’ai acquis une solide expérience en développement frontend et backend
         à travers mes stages, alternances et missions professionnelles.
       </p>
 

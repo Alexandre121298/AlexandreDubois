@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Promize from "./pages/projects/Promize";
+import Orbitaal from "./pages/projects/Orbitaal";
 import "./App.css";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects/promize" element={<Promize />} />
+          <Route path="/projects/orbitaal" element={<Orbitaal />} />
         </Routes>
       </Router>
     </>

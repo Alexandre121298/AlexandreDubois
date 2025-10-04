@@ -1,44 +1,29 @@
 import "./style/Project.css";
 import { Link } from "react-router-dom";
 import spotifarmLogo from '../assets/logos/spotifarm.png';
+import orbitaalLogo from '../assets/logos/Orbitaal.png';
 
 function Project() {
   return (
     <section className="projects-section fade-in">
       <h2>Mes Projets</h2>
       <div className="project-grid">
-        <div className="project-card">
-          <img src="/images/project1.png" alt="Projet 1" />
-          <div className="project-content">
-            <h3>Nom du projet 1</h3>
-            <p>
-              Application web développée avec React, connectée à une API, permettant de gérer des utilisateurs.
-            </p>
-            <div className="project-links">
-              <a href="https://lien-vers-site.com" target="_blank" rel="noreferrer" className="btn-lien">
-                Voir le site
-              </a>
-              <a href="https://github.com/tonrepo/projet1" target="_blank" rel="noreferrer" className="btn-code github">
-                Code source
-              </a>
-            </div>
-          </div>
-        </div>
+
 
         <div className="project-card">
-          <img src="/images/project2.png" alt="Projet 2" />
+          <img src={orbitaalLogo} alt="Orbitaal" className="img-logo" />
           <div className="project-content">
-            <h3>Nom du projet 2</h3>
-            <p>
-              Un petit outil en ligne réalisé en HTML/CSS/JS permettant de visualiser des données JSON localement.
-            </p>
+            <h3>Orbitaal – Agence de services numériques</h3>
+              <p>
+                Création d’une entreprise visant à accompagner commerçants, artisans et jeunes entreprises dans la conception de leur site web et leur référencement.
+              </p>
             <div className="project-links">
-              <a href="https://lien-vers-site.com" target="_blank" rel="noreferrer" className="btn-lien">
+              <a href="https://www.orbi-taal.fr" target="_blank" rel="noreferrer" className="btn-lien">
                 Voir le site
               </a>
-              <a href="https://github.com/tonrepo/projet2" target="_blank" rel="noreferrer" className="btn-code github">
-                Code source
-              </a>
+              <Link to="/projects/orbitaal" className="btn-code">
+                En savoir plus
+              </Link>
             </div>
           </div>
         </div>
