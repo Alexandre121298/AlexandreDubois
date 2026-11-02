@@ -1,63 +1,65 @@
-.about {
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 4rem;
+  margin-top: 3rem;
 }
-
-.about p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
+.about-layout h2 {
+  font-size: 1.7rem;
 }
-
-.about h1 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+.experience-entry {
+  padding-block: 1.5rem;
+  border-top: 1px solid var(--line);
 }
-
-.about h2 {
-  margin-top: 2rem;
-  font-size: 1.3rem;
-  color: #333;
+.experience-entry .eyebrow {
+  font-size: 0.7rem;
+  margin-bottom: 0.6rem;
 }
-
-.about ul {
+.experience-entry h3 {
+  margin: 0 0 0.8rem;
+}
+.experience-entry p:not(.eyebrow),
+.about-next p {
+  color: var(--muted);
+}
+.about-aside {
+  background: var(--soft);
+  border-radius: 4px;
+  padding: 1.7rem;
+  align-self: start;
+}
+.about-aside h2 {
+  font-size: 1.4rem;
+}
+.about-aside h3 {
+  font-size: 0.95rem;
+  margin-top: 1.8rem;
+}
+.about-aside p {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.education-list {
   list-style: none;
   padding: 0;
 }
-
-.about ul li {
-  margin-bottom: 0.5rem;
+.education-list li {
+  margin-block: 1rem;
 }
-
-.cv-button-about {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #333;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 1rem; 
-  font-family: inherit; 
-  line-height: normal; 
+.education-list span {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--muted);
 }
-
-.cv-button-about:hover {
-  background-color: #ed4040;
+.about-next {
+  border-top: 1px solid var(--line);
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+  max-width: 720px;
 }
-
-.skills li {
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-}
-
-.interests ul {
-  list-style: none;
-  padding: 0;
-}
-
-.interests ul li {
-  margin-bottom: 0.5rem;
+@media (max-width: 750px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }

@@ -1,16 +1,23 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./style/Navbar.css";
 
 function Navbar() {
   return (
-    <nav className="navbar">
-      <Link to="/" className="nav-link">Home</Link>
-      <Link to="/about" className="nav-link">About</Link>
-      <Link to="/projects" className="nav-link">Projects</Link>
-      <Link to="/contact" className="nav-link">Contact</Link>
-    </nav>
+    <header className="site-header">
+      <nav className="navbar page-width" aria-label="Navigation principale">
+        <Link to="/" className="brand" aria-label="Alexandre Dubois — Accueil">
+          AD<span>.</span>
+        </Link>
+        <div className="nav-links">
+          <NavLink to="/" end>
+            Accueil
+          </NavLink>
+          <NavLink to="/about">Parcours</NavLink>
+          <NavLink to="/projects">Projets</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
+        </div>
+      </nav>
+    </header>
   );
 }
-
 export default Navbar;
-

@@ -1,48 +1,58 @@
-.contact-container {
-  max-width: 500px;
-  margin: 2rem auto;
-  padding: 2rem;
-  text-align: center;
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  margin-top: 3rem;
 }
-
+.contact-layout .lead {
+  font-size: 1.05rem;
+}
+.contact-layout > div > p:not(.lead) {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.contact-email {
+  overflow-wrap: anywhere;
+  font-weight: 600;
+}
 .contact-form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 1rem;
 }
-
+.contact-form label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
 .contact-form input,
 .contact-form textarea {
+  width: 100%;
   padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
+  border: 1px solid #b8bbb1;
+  border-radius: 4px;
+  background: white;
+  color: var(--ink);
 }
-
 .contact-form textarea {
-  min-height: 120px;
+  min-height: 150px;
   resize: vertical;
 }
-
 .contact-form button {
-  background-color: #333;
-  color: white;
-  padding: 0.8rem;
-  font-size: 1rem;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  justify-self: start;
 }
-
-.contact-form button:hover {
-  background-color: #ed4040;
+.error-message {
+  color: #a32620;
+  font-size: 0.9rem;
 }
-
 .confirmation-message {
-  font-size: 1.2rem;
-  color: #333;
-  font-weight: bold;
-  margin-top: 2rem;
+  background: var(--soft);
+  padding: 1.5rem;
+  border-left: 3px solid #32744c;
 }
-
+@media (max-width: 750px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

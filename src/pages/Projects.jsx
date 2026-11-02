@@ -1,71 +1,138 @@
 import "./style/Project.css";
 import { Link } from "react-router-dom";
-import spotifarmLogo from '../assets/logos/spotifarm.png';
-import orbitaalLogo from '../assets/logos/Orbitaal.png';
+import spotifarmLogo from "../assets/logos/spotifarm.png";
+import orbitaalLogo from "../assets/logos/Orbitaal.png";
+import { datapulse } from "../content";
 
-function Project() {
+function Projects() {
   return (
-    <section className="projects-section fade-in">
-      <h2>Mes Projets</h2>
+    <section className="projects-section page-width page-section fade-in">
+      <p className="eyebrow">Projets & réalisations</p>
+      <h1>
+        Du concret, du code
+        <br />
+        et de la pratique.
+      </h1>
+      <p className="lead">
+        Un projet personnel accessible en ligne, des contributions en entreprise
+        et une expérience entrepreneuriale.
+      </p>
+      <article className="datapulse-card">
+        <div>
+          <p className="eyebrow">01 / Projet personnel · En ligne</p>
+          <h2>DataPulse</h2>
+          <p>
+            Une application de suivi météo qui réunit API REST,
+            authentification, base de données et interface React. Mon projet
+            personnel principal pour mettre en pratique Java et Spring Boot.
+          </p>
+          <ul className="tags">
+            {datapulse.technologies.map((tech) => (
+              <li key={tech}>{tech}</li>
+            ))}
+          </ul>
+          <div className="actions">
+            <a
+              className="button"
+              href={datapulse.app}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Essayer l’application ↗
+            </a>
+            <Link className="text-link" to="/projects/datapulse">
+              Voir le projet →
+            </Link>
+            <a
+              className="text-link"
+              href={datapulse.source}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Code source ↗
+            </a>
+          </div>
+        </div>
+        <div className="datapulse-summary">
+          <span aria-hidden="true">
+            DP<span>.</span>
+          </span>
+          <p>
+            Rechercher une ville.
+            <br />
+            L’ajouter à son espace.
+            <br />
+            Consulter sa météo.
+          </p>
+        </div>
+      </article>
       <div className="project-grid">
-
-
-        <div className="project-card">
-          <img src={orbitaalLogo} alt="Orbitaal" className="img-logo" />
-          <div className="project-content">
-            <h3>Orbitaal – Agence de services numériques</h3>
-              <p>
-                Création d’une entreprise visant à accompagner commerçants, artisans et jeunes entreprises dans la conception de leur site web et leur référencement.
-              </p>
-            <div className="project-links">
-              <a href="https://www.orbi-taal.fr" target="_blank" rel="noreferrer" className="btn-lien">
-                Voir le site
-              </a>
-              <Link to="/projects/orbitaal" className="btn-code">
-                En savoir plus
-              </Link>
-            </div>
+        <article className="project-card">
+          <div className="project-logo">
+            <img src={spotifarmLogo} alt="Spotifarm" loading="lazy" />
           </div>
-        </div>
-
-        <div className="project-card">
-          <img src={spotifarmLogo} alt="Spotifarm" className="img-logo" />
           <div className="project-content">
-            <h3>Promize - Spotifarm</h3>
+            <p className="eyebrow">02 / Expérience professionnelle</p>
+            <h2>Spotifarm · Promize</h2>
             <p>
-              Fonctionnalité innovante développée en React et .NET au sein de Promize (Isagri).
+              Deux années d’alternance : maintenance du backend .NET et
+              développement React de la fonctionnalité d’estimation de date de
+              récolte du maïs.
             </p>
-            <div className="project-links">
-              <Link to="/projects/promize" className="btn-code">
-                En savoir plus
-              </Link>
-            </div>
+            <ul className="tags">
+              <li>.NET</li>
+              <li>React</li>
+              <li>Tests</li>
+            </ul>
+            <Link className="text-link" to="/projects/promize">
+              Découvrir ma contribution →
+            </Link>
           </div>
-        </div>
-
+        </article>
+        <article className="project-card">
+          <div className="project-logo">
+            <img src={orbitaalLogo} alt="Orbi-Taal" loading="lazy" />
+          </div>
+          <div className="project-content">
+            <p className="eyebrow">03 / Expérience entrepreneuriale passée</p>
+            <h2>Orbi-Taal</h2>
+            <p>
+              Création d’une activité de services numériques avec trois associés
+              : besoins clients, sites web, référencement et organisation d’une
+              activité.
+            </p>
+            <ul className="tags">
+              <li>Web</li>
+              <li>Relation client</li>
+              <li>Gestion de projet</li>
+            </ul>
+            <Link className="text-link" to="/projects/orbitaal">
+              Retour sur l’expérience →
+            </Link>
+          </div>
+        </article>
       </div>
-
-      <div className="music-section fade-in">
-        <h2>🎸 Musique & Guitare</h2>
-        <p>
-          En parallèle du développement web, je suis passionné de musique. Je pratique la guitare depuis plus de 20 ans,
-          et je partage désormais des <strong>covers</strong> de morceaux sur les réseaux sociaux.
-        </p>
+      <section className="music-section" aria-labelledby="music-title">
+        <div>
+          <p className="eyebrow">L’autre terrain de création</p>
+          <h2 id="music-title">Musique & guitare</h2>
+          <p>
+            La guitare m’accompagne depuis environ vingt ans. Entre reprises,
+            jeu en groupe et compositions rock, je consacre aussi du temps à la
+            création musicale.
+          </p>
+        </div>
         <div className="youtube-preview">
           <iframe
-            width="100%"
-            height="315"
-            src="https://www.youtube.com/embed/l7ADA7h0rDc?si=ZLEGppLuOn5sw2-h"
-            title="YouTube video player"
-            frameBorder="0"
+            src="https://www.youtube-nocookie.com/embed/l7ADA7h0rDc"
+            title="Reprise à la guitare par Alexandre Dubois"
+            loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-          ></iframe>
+          />
         </div>
-      </div>
-
+      </section>
     </section>
   );
 }
-
-export default Project;
+export default Projects;

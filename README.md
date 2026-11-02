@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Portfolio — Alexandre Dubois
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Portfolio React présentant mon profil de développeur Fullstack Java, .NET et React, mes expériences professionnelles et mon projet personnel DataPulse.
 
-## Available Scripts
+- **Portfolio :** https://Alexandre121298.github.io/AlexandreDubois/
+- **DataPulse :** https://datapulse-api-722245064686.europe-west1.run.app/
+- **Code de DataPulse :** https://github.com/Alexandre121298/datapulse
 
-In the project directory, you can run:
+## Développement local
 
-### `npm start`
+```sh
+npm ci
+npm start
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`npm run dev` lance également le serveur de développement.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Vérification
 
-### `npm test`
+```sh
+CI=true npm test -- --watchAll=false --runInBand
+npm run build
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Publication sur GitHub Pages
 
-### `npm run build`
+```sh
+npm run deploy
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Cette commande construit l’application puis publie le dossier `build` sur la branche `gh-pages`. GitHub Pages doit utiliser cette branche. Le routage utilise `HashRouter` pour permettre l’accès direct aux pages sans configuration serveur.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Mise à jour du contenu
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `src/content.js` : email, GitHub, lien du CV et liens de DataPulse.
+- `src/pages/` : accueil, parcours, projets et contact.
+- `src/pages/projects/` : fiches détaillées des projets.
+- `public/cv.pdf` : document proposé au téléchargement.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Le formulaire de contact utilise la configuration EmailJS existante. Ses tests simulent le service et n’envoient aucun email.
