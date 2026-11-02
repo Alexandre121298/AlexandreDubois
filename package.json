@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Alexandre121298/AlexandreDubois",
+  "homepage": "https://Alexandre121298.github.io/AlexandreDubois",
   "name": "alexandredubois",
   "version": "0.1.0",
   "private": true,
@@ -24,7 +24,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "dev": "react-scripts start"
   },
   "eslintConfig": {
     "extends": [
@@ -46,5 +47,11 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^react-router-dom$": "<rootDir>/node_modules/react-router-dom/dist/index.js",
+      "^react-router/dom$": "<rootDir>/node_modules/react-router/dist/development/dom-export.js"
+    }
   }
 }
