@@ -20,31 +20,8 @@ function About() {
         <div>
           <h2>Expériences professionnelles</h2>
           <article className="experience-entry">
-            <p className="eyebrow">HN-Services · Euro Information · Fin 2024</p>
-            <h3>Ingénieur études et développement</h3>
-            <p>
-              Participation à l’évolution d’applications dans le secteur
-              bancaire : correction d’anomalies, développement de
-              fonctionnalités et tests, avec .NET, XAML et SQL. Travail au sein
-              d’une équipe avec une chaîne d’intégration GitLab CI.
-            </p>
-          </article>
-          <article className="experience-entry">
-            <p className="eyebrow">Promize · Groupe Isagri · 2022–2024</p>
-            <h3>Développeur Fullstack en alternance</h3>
-            <p>
-              Deux années sur Spotifarm, une application agricole : une première
-              année consacrée au backend .NET, puis une seconde centrée sur
-              React et la fonctionnalité d’estimation de la date de récolte du
-              maïs.
-            </p>
-            <Link to="/projects/promize" className="text-link">
-              Découvrir ma contribution à Spotifarm →
-            </Link>
-          </article>
-          <article className="experience-entry">
             <p className="eyebrow">
-              Orbi-Taal · Expérience entrepreneuriale passée
+              Orbi-Taal · 2025–2026 · Expérience entrepreneuriale passée
             </p>
             <h3>Co-fondateur</h3>
             <p>
@@ -58,12 +35,41 @@ function About() {
             </Link>
           </article>
           <article className="experience-entry">
-            <p className="eyebrow">Premières expériences</p>
-            <h3>Stages en développement</h3>
-            <p>
-              Développement C# / .NET chez Eiffage Énergie Systèmes en 2022 et
-              C++ chez Adjustem en 2021.
+            <p className="eyebrow">
+              HN-Services · Euro Information · Octobre–Décembre 2024
             </p>
+            <h3>Ingénieur études et développement</h3>
+            <p>
+              Participation à l’évolution d’applications dans le secteur
+              bancaire : correction d’anomalies, développement de
+              fonctionnalités et tests, avec .NET, XAML et SQL. Travail au sein
+              d’une équipe avec une chaîne d’intégration GitLab CI.
+            </p>
+          </article>
+          <article className="experience-entry">
+            <p className="eyebrow">
+              Promize · Groupe Isagri · Novembre 2022–Août 2024
+            </p>
+            <h3>Développeur Fullstack en alternance</h3>
+            <p>
+              Deux années sur Spotifarm, une application agricole : une première
+              année consacrée au backend .NET, puis une seconde centrée sur
+              React et la fonctionnalité d’estimation de la date de récolte du
+              maïs.
+            </p>
+            <Link to="/projects/promize" className="text-link">
+              Découvrir ma contribution à Spotifarm →
+            </Link>
+          </article>
+          <article className="experience-entry">
+            <p className="eyebrow">Eiffage Énergie Systèmes · Mars–Juin 2022</p>
+            <h3>Stagiaire développeur C# / .NET</h3>
+            <p>Développement d’une application de gestion en C# / .NET.</p>
+          </article>
+          <article className="experience-entry">
+            <p className="eyebrow">Adjustem · Avril–Juin 2021</p>
+            <h3>Stagiaire développeur C++</h3>
+            <p>Développement d’un module de planning en C++.</p>
           </article>
           <h2>Formation</h2>
           <ul className="education-list">
